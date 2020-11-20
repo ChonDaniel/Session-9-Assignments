@@ -1,0 +1,38 @@
+def sum(array):
+    total = 0
+    for index in range(len(array)):
+        total += int(array[index])
+    return total
+
+def max(array):
+    maximum = array[0]
+    for index in range(1, len(array)):
+        if maximum < array[index]:
+            maximum = array[index]
+    return maximum
+
+
+def min(array):
+    minimum = array[0]
+    for index in range(1, len(array)):
+        if minimum > array[index]:
+            minimum = array[index]
+    return minimum
+
+
+def main():
+    name = ['Smith','Johnson','Williams','Brown','Jones']
+    test = ['50','90','70','80','65']
+    
+    for names in range(len(name)):
+        print(name[names] + " test score: " + test[names])
+
+    maximum = max(test)
+    minimum = min(test)
+    total = sum(test)
+    
+    print("Highest test score: "  + str(maximum))
+    print("Lowest test score: "  + str(minimum))
+    print("The total is: " + str(total))
+    
+main()

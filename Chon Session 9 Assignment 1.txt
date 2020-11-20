@@ -1,0 +1,12 @@
+def main():
+    name = ['Smith','Johnson','Williams','Brown','Jones']
+    
+    for names in name:
+        print(names)
+
+    print("")
+
+    for names in reversed(name):
+        print(names)
+    
+main()

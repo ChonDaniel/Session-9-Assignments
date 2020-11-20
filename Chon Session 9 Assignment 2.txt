@@ -1,0 +1,13 @@
+def main():
+    name = ['Smith','Johnson','Williams','Brown','Jones']
+    test = ['50','90','70','80','65']
+    
+    for names in range(len(name)):
+        print(name[names] + " test score: " + test[names])
+
+    print("")
+
+    for names in reversed(name):
+        print(names)
+    
+main()
